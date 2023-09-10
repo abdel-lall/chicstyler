@@ -1,0 +1,34 @@
+.quantity-btns-div {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 5px 0px 15px 0px;
+}
+
+.quantity-btn {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  width: 2rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+.quantity-btns-quantity {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  width: 2rem;
+  text-align: center;
+}

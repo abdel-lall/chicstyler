@@ -1,0 +1,93 @@
+.jumbotron-section-container {
+  display: block;
+  max-width: 1340px;
+  width: 98vw;
+  max-height: 536px;
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 10px;
+}
+
+.jumbotron-slider-container {
+  display: grid;
+  grid-template-columns: 70px 1fr 70px;
+  grid-template-rows: 1fr 50px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.jumbotron-left-arrow-div {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  z-index: 2;
+}
+.jumbotron-arrow-btn-left,
+.jumbotron-arrow-btn-right {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: transform 0.5s ease;
+}
+.jumbotron-arrow-btn-left:hover {
+  transform: translate(-5px);
+}
+.jumbotron-arrow-btn-right:hover {
+  transform: translate(5px);
+}
+.jumbotron-arrow-left {
+  width: 30px;
+  position: relative;
+  top: -2px;
+  left: -1px;
+}
+.jumbotron-right-arrow-div {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  z-index: 2;
+}
+.jumbotron-arrow-right {
+  width: 30px;
+  position: relative;
+  top: -2px;
+  left: -1px;
+}
+.jumbotron-radio-buttons-div {
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 1;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  z-index: 2;
+}
+.radio-buttons-span {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 3px;
+}
+.jumbotron-slider {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: 100%;
+}
+
+@media (max-width: 1240px) {
+  .jumbotron-section-container {
+    max-width: 804px;
+    width: 98vw;
+    max-height: calc((804px) * 2 / 3);
+    height: calc((98vw) * 2 / 3);
+  }
+}

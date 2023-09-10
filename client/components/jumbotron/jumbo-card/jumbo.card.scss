@@ -1,0 +1,93 @@
+@font-face {
+  font-family: chopard;
+  src: url(../../../public/assets/fonts/Chopard_Regular.ttf);
+}
+@font-face {
+  font-family: verona;
+  src: url(../../../public/assets/fonts/SAVerona.otf);
+}
+.jumbo-card {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  width: 100%;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, max-content);
+  gap: 15px;
+  justify-items: center;
+  align-self: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.jumbo-card-title {
+  display: block;
+  font-family: chopard;
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+}
+.jumbo-card-message {
+  font-family: verona;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+$fontsize: 15px;
+$padding: 10px;
+
+.jumbo-card-button {
+  display: block;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: $fontsize;
+  text-align: center;
+  height: calc($fontsize * 2 + $padding * 2);
+  line-height: calc($fontsize * 2 + $padding / 2);
+  font-family: parnas;
+  padding: $padding;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  transition: background-color 1s ease, color 1s ease;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+@media (max-width: 1240px) {
+  .jumbo-card {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    z-index: 1;
+  }
+}
+@media (max-width: 560px) {
+  .jumbo-card {
+    gap: 5px;
+  }
+  .jumbo-card-title {
+    font-size: 1rem;
+  }
+  .jumbo-card-message {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+  #jumbo-card-button {
+    font-size: 0.6rem;
+    margin-top: 1rem;
+    height: calc(0.6rem * 2 + 0.6rem * 2);
+    line-height: calc(0.6rem * 2 + 0.6rem / 2);
+    font-family: parnas;
+    padding: 0.6rem;
+  }
+}

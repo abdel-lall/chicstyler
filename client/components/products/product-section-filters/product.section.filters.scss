@@ -1,0 +1,102 @@
+.product-section-filter-container {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  width: 16vw;
+  height: fit-content;
+}
+.product-section-filter-item {
+  width: 100%;
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+}
+.product-section-filter-selector {
+  z-index: 1;
+}
+.product-section-filter-selector-btn {
+  width: 100%;
+  font-family: creo;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  border: none;
+  background-color: white;
+  text-transform: capitalize;
+}
+.filter-selector-btn-icon {
+  align-self: center;
+  height: 22px;
+  width: 22px;
+}
+.filter-selector-btn-icon-close {
+  align-self: center;
+  height: 22px;
+  width: 22px;
+}
+.product-section-filter-list {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+.product-section-filter-list-element {
+  display: flex;
+  flex-direction: row;
+  font-family: creo;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-transform: capitalize;
+  padding-right: 10px;
+  justify-content: space-between;
+  word-wrap: break-word;
+}
+.product-section-filter-list-element-checkbox {
+  display: none;
+}
+.product-section-filter-list-element-label {
+  box-sizing: border-box;
+  align-self: center;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Style the checked state */
+.product-section-filter-list-element-checkbox:checked
+  + .product-section-filter-list-element-label {
+  background-color: black;
+}
+
+@media (max-width: 560px) {
+  .product-section-filter-container {
+    width: 22vw;
+  }
+  .product-section-filter-selector-btn {
+    font-size: 0.8rem;
+  }
+  .filter-selector-btn-icon,
+  .filter-selector-btn-icon-close {
+    height: 14px;
+    width: 14px;
+  }
+  .product-section-filter-list-element {
+    font-size: 0.6rem;
+  }
+  .product-section-filter-list-element-label {
+    height: 8px;
+    width: 8px;
+  }
+  .product-section-filter-list {
+    padding-left: 10px;
+  }
+}

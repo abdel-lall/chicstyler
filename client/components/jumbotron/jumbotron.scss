@@ -1,0 +1,29 @@
+
+
+
+
+
+.jumbotron-div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  max-width: 1340px;
+  width: 98vw;
+ 
+}
+.jumbotron-image{
+  grid-column: 1 /span 1;
+  grid-row: 1/ span 1;
+  height: 100%;
+  width: auto;
+}
+
+@media (max-width: 1240px) {
+  .jumbotron-div {
+  grid-template-columns: auto ;
+  grid-template-rows: 1fr;
+  max-width: 804px;
+  width: 98vw;
+  }
+}
+

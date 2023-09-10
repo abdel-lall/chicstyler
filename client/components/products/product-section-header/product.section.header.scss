@@ -1,0 +1,24 @@
+.product-section-header {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  display: grid;
+  grid-template-columns: 1fr fit-content;
+  grid-template-rows: 1fr;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-bottom: 1px solid #d2d2d2;
+  align-items: end;
+}
+.product-section-header-title {
+  align-self: center;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  font-size: 1.5rem;
+  font-family: verona;
+  text-transform: capitalize;
+}
+@media (max-width: 560px) {
+  .product-section-header-title {
+    font-size: 0.8rem;
+  }
+}

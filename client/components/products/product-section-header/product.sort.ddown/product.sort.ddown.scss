@@ -1,0 +1,74 @@
+.product-filter-ddown-section {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  justify-self: end;
+}
+.product-filter-ddown-button {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  font-size: 1rem;
+  font-family: creo;
+  text-transform: capitalize;
+  line-height: 1.2rem;
+  padding: 0px 0px 0px 3px;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  transition: border-bottom-color 0.5s ease;
+  &:hover {
+    border-bottom-color: black;
+  }
+}
+
+.drop-down-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.product-filter-ddown-menu {
+  box-sizing: border-box;
+  position: absolute;
+  right: 2vw;
+  top: calc(32vh + 5px);
+  z-index: 1;
+  display: grid;
+  grid-template-rows: auto;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+}
+.product-filter-ddown-item {
+  background-color: white;
+  font-size: 1rem;
+  font-family: creo;
+  line-height: 2rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d2d2d2;
+  transition: border-bottom-color 0.5s ease;
+  &:hover {
+    border-bottom-color: black;
+  }
+  &.selected {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media (max-width: 560px) {
+  .product-filter-ddown-button {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+  .product-filter-ddown-item {
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+  }
+  .drop-down-icon {
+    width: 16px;
+    height: 16px;
+  }
+}

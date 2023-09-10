@@ -1,0 +1,21 @@
+.order-summary-checkout {
+  background-color: black;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  font-weight: 100;
+  padding: 5px 0px 5px 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 1px solid black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}

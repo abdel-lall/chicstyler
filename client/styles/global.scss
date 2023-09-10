@@ -1,0 +1,41 @@
+@font-face {
+  font-family: romantically;
+  src: url(../public/assets/fonts/Romantically.otf);
+}
+@font-face {
+  font-family: verona;
+  src: url(../public/assets/fonts/SAVerona.otf);
+}
+@font-face {
+  font-family: chopard;
+  src: url(../public/assets/fonts/Chopard_Regular.ttf);
+}
+@font-face {
+  font-family: parnas;
+  src: url(../public/assets/fonts/Parnas_Sans.ttf);
+}
+@font-face {
+  font-family: creo;
+  src: url(../public/assets/fonts/Creo-ExtraLight.ttf);
+}
+@font-face {
+  font-family: poiret;
+  src: url(../public/assets/fonts/PoiretOne-Regular.ttf);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 75%;
+}

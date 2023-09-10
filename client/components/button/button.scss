@@ -1,0 +1,21 @@
+$fontsize: 15px;
+$padding: 10px;
+.generic-button {
+  display: block;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size: $fontsize;
+  text-align: center;
+  height: calc($fontsize * 2 + $padding * 2);
+  line-height: calc($fontsize * 2 + $padding / 2);
+  font-family: parnas;
+  padding: $padding;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-style: solid;
+  border-width: 1px;
+}
+.generic-button.dark{
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,35 @@
+// @font-face {
+//   font-family: 'romantically';
+//   src: url('../../../public/assets/fonts/Romantically.otf');
+// }
+.brand-section {
+  margin: 0px;
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  display: grid;
+  width: 100%;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: center;
+}
+.brand{
+  display: block;
+  height: fit-content;
+  font-size: 1.4rem;
+  font-family: romantically;
+  text-transform: capitalize;
+  margin: 0px;
+  
+}
+.brand::first-letter {
+  font-size: 1.2rem;
+}
+.brand-link {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+.brand-link:focus-visible {
+  outline: none;
+}
+

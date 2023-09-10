@@ -1,0 +1,15 @@
+.form-input-field {
+  height: 2.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 10px 0px 10px;
+  &::placeholder {
+    font-family: creo;
+    color: black;
+  }
+  &:focus-visible{
+    border: 2px solid black;
+    border-radius: 1px;
+    outline: none;
+  }
+}
