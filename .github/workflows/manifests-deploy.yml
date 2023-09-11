@@ -2,7 +2,7 @@ name: manifests-deploy
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - 'infra/**'
 jobs:
@@ -13,5 +13,5 @@ jobs:
       - uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEN_ACCESS_TOKEN }}
-      - run: doctl kubernates cluster kubeconfig save chicstyler
+      - run: doctl kubernetes cluster kubeconfig save chicstyler
       - run: kubectl apply -f infra/k8
