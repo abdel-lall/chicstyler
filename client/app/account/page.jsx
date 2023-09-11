@@ -10,7 +10,7 @@ import SignupForm from "@/components/signup-form/signup.form.component";
 import Button from "@/components/button/button.component";
 import ProductOrdered from "@/components/products/product-orderd/product.ordered.jsx";
 import FormInput from "@/components/form-input/form.input.component";
-import { APIusersEndPoints } from "@/utils/URL";
+
 const Account = () => {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   const user = useSelector((state) => state.auth.user);
