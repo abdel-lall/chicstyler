@@ -19,5 +19,5 @@ jobs:
       - uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEN_ACCESS_TOKEN }}
-      - run: doctl kubernates cluster kubeconfig save chicstyler
+      - run: doctl kubernetes cluster kubeconfig save chicstyler
       - run: kubectl rollout restart deployement auth-depl
