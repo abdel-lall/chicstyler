@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: products-depl
+  name: orders-depl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: products
+      app: orders
   template:
     metadata:
       labels:
-        app: products
+        app: orders
     spec:
       containers:
-        - name: products
-          image: abdel31/products
+        - name: orders
+          image: us.gcr.io/chickstyler-dev/orders
           env:
             - name: MONGO_URI
-              value: mongodb://products-mongo-srv:27017/products
+              value: mongodb://orders-mongo-srv:27017/orders
             - name: BUCKET_URI
               value: https://s3.amazonaws.com/chickstyler.store/images
             - name: JWT_KEY
@@ -29,12 +29,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: products-srv
+  name: orders-srv
 spec:
   selector:
-    app: products
+    app: orders
   ports:
-    - name: products
+    - name: orders
       protocol: TCP
       port: 3000
       targetPort: 3000

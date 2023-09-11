@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: us.gcr.io/chickstyler-dev/auth
+          image: abdel31/auth
           env:
             - name: MONGO_URI
               value: mongodb://auth-mongo-srv:27017/auth
