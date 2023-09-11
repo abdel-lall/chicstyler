@@ -20,4 +20,4 @@ jobs:
         with:
           token: ${{ secrets.DIGITALOCEN_ACCESS_TOKEN }}
       - run: doctl kubernetes cluster kubeconfig save chicstyler
-      - run: kubectl rollout restart deployement auth-depl
+      - run: kubectl rollout restart deployment auth-depl
