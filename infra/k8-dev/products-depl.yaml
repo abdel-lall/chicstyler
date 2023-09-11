@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: products
-          image: abdel31/products
+          image: us.gcr.io/chickstyler-dev/products
           env:
             - name: MONGO_URI
               value: mongodb://products-mongo-srv:27017/products
