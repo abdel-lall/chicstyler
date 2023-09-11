@@ -16,3 +16,8 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       - run: docker push abdel31/auth
+      - uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEN_ACCESS_TOKEN }}
+      - run: doctl kubernates cluster kubeconfig save chicstyler
+      - run: kubectl rollout restart deployement auth-depl
