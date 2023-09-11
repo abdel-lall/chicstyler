@@ -15,7 +15,8 @@ app.use(json());
 app.use(
   cookieSession({
     signed: false, // this option is to set incryption to false JWT is already increpted
-    secure: process.env.NODE_ENV !== "test", // this is set to work only whith https connection
+    secure: false,
+    // secure: process.env.NODE_ENV !== "test", // this is set to work only whith https connection
     //the process.env.NODE_ENV !== "test" returns false if in test env thus accept http
   })
 );
