@@ -2,9 +2,9 @@ name: manifests-deploy
 on:
   push:
     branches:
-      - master
+      - main
     paths:
-      - 'auth/**'
+      - 'infra/**'
 jobs:
   build:
     runs-on: ubuntu-latest
