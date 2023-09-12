@@ -7,8 +7,12 @@ metadata:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
+  tls:
+    - hosts:
+        - chicstyler.store
+      secretName: certificate-secret
   rules:
-    - host: www.chicstyler.store
+    - host: chicstyler.store
       http:
         paths:
           - path: /api/users/?(.*)
@@ -39,10 +43,6 @@ spec:
                 name: client-srv
                 port:
                   number: 3000
-  tls:
-    - hosts:
-      - www.chicstyler.store
-    secretName: certificate-secret
 ---
 apiVersion: v1
 kind: Service
