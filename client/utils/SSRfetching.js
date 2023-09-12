@@ -25,7 +25,7 @@ export const SSRfetching = async (method, URLpath, body) => {
   }
 
   const res = await fetch(
-    `https://chicstyler.store/${URLpath}`,
+    `https://www.chicstyler.store/${URLpath}`,
     requestOptions
   );
   // The return value is *not* serialized

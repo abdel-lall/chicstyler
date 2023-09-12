@@ -9,10 +9,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - chicstyler.store
+        - www.chicstyler.store
       secretName: certificate-secret
   rules:
-    - host: chicstyler.store
+    - host: www.chicstyler.store
       http:
         paths:
           - path: /api/users/?(.*)
