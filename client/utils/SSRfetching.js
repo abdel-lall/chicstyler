@@ -25,7 +25,7 @@ export const SSRfetching = async (method, URLpath, body) => {
   }
 
   const res = await fetch(
-    `http://ingress-nginx-controller.ingress-nginx.svc.cluster.local/${URLpath}`,
+    `https://chicstyler.store/${URLpath}`,
     requestOptions
   );
   // The return value is *not* serialized
