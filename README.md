@@ -1,6 +1,7 @@
 # ChicStyler
 
-[ChicStyler Link](www.chicstyler.store)
+[ChicStyler Link](https://www.chicstyler.store)
+
 
 Welcome to ChicStyler, a demo e-commerce website that offers a wide range of clothing products. ChicStyler is designed and built using a microservices architecture, providing a scalable and efficient solution for selling clothing online.
 
